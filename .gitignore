@@ -1,0 +1,6 @@
+echo ".obsidian/" > .gitignore  # 排除 Obsidian 配置文件夹
+echo "*.log" >> .gitignore  # 排除日志文件
+echo "*.bak" >> .gitignore  # 排除备份文件
+echo "*.swp" >> .gitignore  # 排除编辑器的临时文件
+echo "*.jpg" >> .gitignore  # 排除图片文件
+echo "*.png" >> .gitignore  # 排除图片文件
