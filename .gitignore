@@ -1,6 +1,98 @@
-echo ".obsidian/" > .gitignore  # 排除 Obsidian 配置文件夹
-echo "*.log" >> .gitignore  # 排除日志文件
-echo "*.bak" >> .gitignore  # 排除备份文件
-echo "*.swp" >> .gitignore  # 排除编辑器的临时文件
-echo "*.jpg" >> .gitignore  # 排除图片文件
-echo "*.png" >> .gitignore  # 排除图片文件
+# ===========================================
+# CTF 学习仓库 .gitignore
+# ===========================================
+
+# Obsidian 笔记软件配置
+.obsidian/
+.trash/
+
+# Syncthing 同步工具配置
+.stfolder/
+
+# 编辑器临时文件
+*.swp
+*.swo
+*~
+.vscode/settings.json
+.idea/
+
+# 系统文件
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+
+# 日志文件
+*.log
+*.logs
+
+# 备份文件
+*.bak
+*.backup
+*.old
+*.orig
+
+# 压缩文件 (可选择性忽略)
+# *.zip
+# *.rar
+# *.7z
+# *.tar.gz
+
+# 大型媒体文件 (根据需要调整)
+# *.mp4
+# *.avi
+# *.mov
+# *.mkv
+
+# 图片文件 (根据需要调整，CTF题目可能需要图片)
+# *.jpg
+# *.jpeg
+# *.png
+# *.gif
+# *.bmp
+
+# 敏感信息文件
+*secret*
+*password*
+*token*
+*key*
+*.pem
+*.p12
+*.pfx
+config.json
+.env
+.env.local
+.env.*.local
+
+# CTF 特定文件
+*.flag
+flag.txt
+solution.txt
+*exploit*
+*payload*
+
+# Python 相关
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+.venv/
+pip-log.txt
+
+# 临时文件
+*.tmp
+*.temp
+/tmp/
+
+# 个人笔记 (如果不想公开)
+# personal/
+# private/
+# draft/
