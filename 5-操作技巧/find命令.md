@@ -29,7 +29,7 @@ find [搜索路径] [搜索条件] [动作]
 
 ```bash
 # 搜索以flag开头的文件
-find / -name "flag*" 2>/dev/null
+cccc
 
 # 搜索包含flag的文件名（不区分大小写）
 find / -iname "*flag*" 2>/dev/null
